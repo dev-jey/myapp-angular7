@@ -1,1 +1,15 @@
-<p>home works!</p>
+<div class="container row">
+    <h1 [class.gray]="h1Style" class="col-md-8">Home</h1>
+    <div class="col-md-4">
+        <br>
+        <button (click)="firstClick()" class="btn btn-dark btn-sm mr-auto d-block">
+            {{btnContent}}
+        </button>
+        <br><hr><br>
+        <div *ngFor="let item of todoData">
+            <h3>{{item.title}}</h3>
+            <p>{{item.body}}</p>
+        </div>
+    </div>
+
+</div>
