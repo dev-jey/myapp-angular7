@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -14,7 +13,6 @@ import { LoaderComponent } from './loader/loader.component';
   declarations: [
     AppComponent,
     NavComponent,
-    AboutComponent,
     ContactComponent,
     HomeComponent,
     CarouselComponent,

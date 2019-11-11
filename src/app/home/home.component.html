@@ -1,22 +1,27 @@
 <app-loader *ngIf="isLoading"></app-loader>
 <div class="container row">
     <div class="col-md-8">
-        <h1 [class.gray]="h1Style" >Home</h1>
+        <h1 [class.gray]="h1Style">Home</h1>
         <br>
         <h3 class="">Welcome to this article site</h3>
-        <p class="text-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam officia nihil saepe reiciendis, molestiae ut minus quis at beatae consectetur laudantium quam iure, voluptatibus incidunt, veniam atque vel! Quam!</p>
+        <p class="text-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam officia
+            nihil saepe reiciendis, molestiae ut minus quis at beatae consectetur laudantium quam iure, voluptatibus
+            incidunt, veniam atque vel! Quam!</p>
         <app-carousel></app-carousel>
     </div>
-    
+
     <div class="col-md-4">
         <br>
         <button (click)="firstClick()" class="btn btn-dark btn-sm float-right">
             {{btnContent}}
         </button>
-        <br><hr><br>
-        <div *ngFor="let item of todoData">
-            <h3>{{item.title}}</h3>
-            <p class="text-muted">{{item.body}}</p>
+        <br>
+        <hr><br>
+        <div *ngIf="todoData">
+            <div *ngFor="let item of todoData">
+                <h3>{{item.title}}</h3>
+                <p class="text-muted">{{item.body}}</p>
+            </div>
         </div>
     </div>
 
